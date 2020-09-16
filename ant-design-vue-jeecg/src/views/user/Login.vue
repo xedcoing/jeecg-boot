@@ -27,7 +27,7 @@
             </a-input>
           </a-form-item>
 
-          <a-row :gutter="0">
+          <!-- <a-row :gutter="0">
             <a-col :span="16">
               <a-form-item>
                 <a-input
@@ -44,7 +44,7 @@
               <img v-if="requestCodeSuccess" style="margin-top: 2px;" :src="randCodeImage" @click="handleChangeCheckCode"/>
               <img v-else style="margin-top: 2px;" src="../../assets/checkcode.png" @click="handleChangeCheckCode"/>
             </a-col>
-          </a-row>
+          </a-row> -->
 
 
         </a-tab-pane>
@@ -178,7 +178,7 @@
       this.currdatetime = new Date().getTime();
       Vue.ls.remove(ACCESS_TOKEN)
       this.getRouterData();
-      this.handleChangeCheckCode();
+      // this.handleChangeCheckCode();
       // update-begin- --- author:scott ------ date:20190805 ---- for:密码加密逻辑暂时注释掉，有点问题
       //this.getEncrypte();
       // update-end- --- author:scott ------ date:20190805 ---- for:密码加密逻辑暂时注释掉，有点问题
